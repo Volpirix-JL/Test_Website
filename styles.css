@@ -32,6 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .nav_logo {
@@ -39,11 +40,17 @@ body {
   font-weight: 700;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 nav a {
-  margin-left: 1.5rem;
   text-decoration: none;
   color: var(--text);
   font-weight: 600;
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -97,7 +104,7 @@ nav a:hover {
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   nav {
     display: none;
   }
